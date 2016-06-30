@@ -6,10 +6,11 @@
 		%title Restaurante
 		%meta{name:"description", content:"Come rico en el mejor restaurante de la ciudad."}
 		%link{rel:"stylesheet", href:"css/normalize.css"}
+		%link{rel:"stylesheet", href:"css/style.css"}
 		%meta{name:"viewport", content:"width=device-width, initial-scale=1"}
 		%script{src:"js/vendor/modernizr-2.8.3.min.no-js"}
 	%body
-		="<!--[if lt IE 8]>"
+		="<!--[if lt IE 9]>"
 		%p{class:"browserupgrade"}
 			Estás usando un navegador
 			%strong desactualizado.
@@ -18,4 +19,8 @@
 			actualiza tu navegador
 			para una mejor experiencia
 		="<![endif]-->"
-		%p Hola Mundo
+
+		.video-container
+			%video{autoplay:true,loop:true}
+				%source{scr:"/videos/mp4/bbq.mp4",typ:"video/mp4"}
+				%source{scr:"/videos/webm/bbq.webm",typ:"video/webm"}
