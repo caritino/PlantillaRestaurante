@@ -122,6 +122,10 @@ html,body{
    Helper classes
    ========================================================================== */
 
+.no-margin{
+    margin:0px;
+}
+
 .white-text{
     color:white;
 }
@@ -134,8 +138,20 @@ html,body{
     font-size:4em;
 }
 
+.fixed{
+    position:fixed;
+}
+
 .relative{
     position:relative;
+}
+
+.top{
+    top:5em;
+}
+
+.right{
+    right:1em;
 }
 
 .up{
