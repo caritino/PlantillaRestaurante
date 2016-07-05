@@ -44,10 +44,10 @@
 						%li
 							%a{}= item
 			.absolute.black.large-padding.bottom.white-text.full-width.no-left#description
-				.row.middle-xs
+				.row.middle-xs.center-xs
 					.col-xs-7.col-sm-6.white-text.medium
 						Atención cálida y una mejor comida.
-					.col-xs
+					.col-xs.hidden
 						.box
 							%nav.text-right.navigation
 								%ul.list-inline
@@ -55,5 +55,8 @@
 										%li
 											%a{}= item
 
-
 		.full-height
+
+		%script{src:"https://code.jquery.com/jquery-3.0.0.min.js",integrity:"sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=",crossorigin:"anonymous"}
+		%script
+			window.jQuery || document.write("<script scr="/js/vendor/jquery-1.12.0.min.js"></script>")
