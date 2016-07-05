@@ -34,10 +34,14 @@
 				.box.white-text
 					%img{src:"/imgs/logo.png",width:"200"}
 					%h1.dancing-script.title.no-margin Restaurante
-					%p#is-open Abierto ahora
+					%p#is-open
+						%i.glyphicon.glyphicon-time
+							Abierto ahora
 			%nav.fixed.top.right.navigation.white-text#navigation
 				-menu = ["Inicio","Menú","Galería","Contacto","Cómo llegar"]
 				%ul.list-inline
 					-menu.each do |item|
 						%li
 							%a{}= item
+			.absolute.medium.black.large-padding.bottom.white-text.full-width#description
+				Atención cálida y una mejor comida.

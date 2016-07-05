@@ -148,6 +148,10 @@ html,body{
     margin:0px;
 }
 
+.black{
+    background-color:#222;
+}
+
 .white-text{
     color:white;
 }
@@ -158,6 +162,14 @@ html,body{
 
 .title{
     font-size:4em;
+}
+
+.large-padding{
+    padding:10px 15px;
+}
+
+.absolute{
+    postion: absolute;
 }
 
 .fixed{
@@ -176,12 +188,20 @@ html,body{
     right:5em;
 }
 
+.bottom{
+    bottom:0px;
+}
+
 .up{
     z-index:5;
 }
 
 .full-height{
     height:100%;
+}
+
+.full-width{
+    width:100%;
 }
 
 .row{
