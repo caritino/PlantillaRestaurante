@@ -43,5 +43,17 @@
 					-menu.each do |item|
 						%li
 							%a{}= item
-			.absolute.medium.black.large-padding.bottom.white-text.full-width.no-left#description
-				Atención cálida y una mejor comida.
+			.absolute.black.large-padding.bottom.white-text.full-width.no-left#description
+				.row.middle-xs
+					.col-xs-7.col-sm-6.white-text.medium
+						Atención cálida y una mejor comida.
+					.col-xs
+						.box
+							%nav.text-right.navigation
+								%ul.list-inline
+									-menu.each do |item|
+										%li
+											%a{}= item
+
+
+		.full-height
