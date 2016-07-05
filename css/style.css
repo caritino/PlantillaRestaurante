@@ -105,6 +105,20 @@ html, body {
 
 .navigation li {
   padding: 5px 10px;
+  transition: all 0.3s;
+}
+
+.navigation li:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navigation li a {
+  color: white;
+  cursor: pointer;
+}
+
+.navigation li a:hover {
+  text-decoration: none;
 }
 
 /* ==========================================================================

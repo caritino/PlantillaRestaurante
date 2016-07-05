@@ -122,6 +122,17 @@ html,body{
     li{
         @extend .medium;
         padding:5px 10px;
+        transition: all 0.3s;
+        &:hover{
+            background-color:rgba(0,0,0,0.5);
+        }
+        a{
+            color: white;
+            cursor:pointer; 
+            &:hover{
+                text-decoration: none;
+            }
+        }
     }
 }
 
