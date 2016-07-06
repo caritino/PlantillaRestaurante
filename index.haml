@@ -29,7 +29,7 @@
 				%source{scr:"/videos/mp4/bbq.mp4",type:"video/mp4"}
 				%source{scr:"/videos/webm/bbq.webm",type:"video/webm"}
 
-		.row.full-height.middle-xs.center-xs.relative.up
+		.row.full-height.middle-xs.center-xs.relative.up#home
 			.col-xs-12
 				.box.white-text
 					%img{src:"/imgs/logo.png",width:"200"}
@@ -55,7 +55,18 @@
 										%li
 											%a{}= item
 
-		.full-height
+		.text-center#menu
+			-menu_photos = [{title: "Club Sandwich", pricing: "10.00",image:"club-sandwich"},{title: "Combo hamburguesa", pricing: "50.00",image:"combo"},{title: "Hamburguesa", pricing: "20.00",image:"hamburger"},{title: "Hot cakes", pricing: "30.00",image:"hot-cakes"},{title: "Panini", pricing: "15.00",image:"panini"},{title: "Papas", pricing: "10.00",image:"papas"},{title: "Club Sandwich", pricing: "10.00",image:"club-sandwich"},{title: "Hamburguesa", pricing: "20.00",image:"hamburger"}]
+
+			.row
+				-menu_photos.each do |photo|
+					.col-md-4.col-lg-3.col-sm-6.col.xs-12.food
+						%img{scr:"/imgs/food/#{photo[:image]}-thumb.jpg"}
+     
+
+
+
+
 
 		%script{src:"https://code.jquery.com/jquery-3.0.0.min.js",integrity:"sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=",crossorigin:"anonymous"}
 		%script
